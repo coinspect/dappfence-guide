@@ -1,0 +1,32 @@
+:root[data-theme='dark'],
+:root {
+  /* depth scale — each step is clearly distinct */
+  --sl-color-bg:          #0b0e0c;   /* page background */
+  --sl-color-bg-nav:      #141c17;   /* nav, sidebar, cards */
+  --sl-color-bg-sidebar:  #141c17;
+  --sl-color-gray-6:      #1a2420;   /* code blocks, subtle surfaces */
+  --sl-color-gray-5:      #243b2e;   /* borders, dividers */
+  --sl-color-gray-4:      #304a3a;   /* very muted elements */
+
+  /* text scale — neutral so same-hue bg doesn't kill contrast */
+  --sl-color-text:        #e8ecea;   /* primary text — near white, barely tinted */
+  --sl-color-gray-1:      #e8ecea;
+  --sl-color-gray-2:      #b4bcb8;   /* secondary text — neutral mid */
+  --sl-color-gray-3:      #8a9590;   /* muted text — neutral, 7:1 on bg */
+
+  /* accent */
+  --sl-color-accent:      #3ecf6e;
+  --sl-color-accent-high: #56d97f;   /* hover — distinct from base */
+  --sl-color-accent-low:  #0f2b1c;   /* border on accent bg */
+  --sl-color-bg-accent:   #081910;   /* badge/pill bg — darker than accent-low */
+  --sl-color-text-accent: #3ecf6e;
+
+  --sl-color-black:       #0b0e0c;
+  --sl-color-white:       #ddefea;
+  --sl-font: ui-sans-serif, system-ui, sans-serif;
+  --sl-font-mono: ui-monospace, 'Cascadia Code', monospace;
+
+  --sl-shadow-terminal: 0 20px 60px rgba(0,0,0,0.5), 0 4px 16px rgba(0,0,0,0.3);
+  --sl-color-hero-overlay: color-mix(in srgb, var(--sl-color-bg) 92%, transparent);
+  --container-width: 68.75rem;
+}

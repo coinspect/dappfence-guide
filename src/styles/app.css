@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@import "./theme.css";
+
+@theme {
+  --color-bg: var(--sl-color-bg);
+  --color-surface: var(--sl-color-bg-nav);
+  --color-fg: var(--sl-color-text);
+  --color-fg-2: var(--sl-color-gray-2);
+  --color-fg-3: var(--sl-color-gray-3);
+  --color-line: var(--sl-color-gray-5);
+  --color-green: var(--sl-color-accent);
+  --color-green-hi: var(--sl-color-accent-high);
+  --color-green-dim: var(--sl-color-accent-low);
+  --color-green-bg: var(--sl-color-bg-accent);
+  --font-sans: var(--sl-font);
+  --font-mono: var(--sl-font-mono);
+  --shadow-terminal: var(--sl-shadow-terminal);
+}
+
+@utility nav-link {
+  @apply text-fg-3 text-sm hover:text-fg transition-colors;
+}
+
+@utility section-heading {
+  @apply text-2xl font-bold mb-10;
+}
+
+@layer base {
+  a { color: inherit; text-decoration: none; }
+  strong { color: var(--color-fg); }
+}

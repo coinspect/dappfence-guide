@@ -1,0 +1,14 @@
+---
+interface Props {
+  status: 'VERIFIED' | 'BLOCKED';
+  filename: string;
+  hash: string;
+}
+const { status, filename, hash } = Astro.props;
+const isBlocked = status === 'BLOCKED';
+---
+<div class:list={['flex gap-4 items-baseline whitespace-nowrap', isBlocked && 'opacity-70']}>
+  <span class:list={['min-w-[7ch] font-bold tracking-[0.03em]', isBlocked ? 'text-[#f87171]' : 'text-green']}>{status}</span>
+  <span class='min-w-[18ch]'>{filename}</span>
+  <span class='text-fg-3 text-xs'>{hash}</span>
+</div>
