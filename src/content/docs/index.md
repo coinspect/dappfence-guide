@@ -1,8 +1,6 @@
 ---
 title: Why DappFence
 description: DappFence is a browser-side integrity protection layer for web frontends. Learn what it does, who it's for, and what it doesn't cover.
-sidebar:
-    order: 1
 ---
 
 DappFence is a browser-side integrity protection layer for web frontends. It uses a Service
